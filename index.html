@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+  </head>
+  <body style="text-align: center; padding: 20vh; font-size: xx-large;" >
+    <h1>GamGam</h1>
+    <py-script> 
+import random
+from js import prompt
+
+rock = "rock"
+
+paper = "paper"
+
+scissors = "scissors"
+
+#Write your code below this line 👇
+a=int(prompt("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
+if a==0:
+  print("you chose the rock")
+elif a==1:
+  print("you chose the paper")
+elif a==2:
+  print("you chose the scissors")
+comp=[rock,paper,scissors]
+b=random.choice(comp)
+print(f"Computer chose the {b}")
+if a==0:
+  if b==rock:
+    print("draw")
+  elif b==paper :
+    print ("you lose")
+  elif b== scissors:
+    print ("you won")
+elif a==1:
+  if b==rock :
+    print("you won")
+  elif b== paper:
+    print("draw")
+  elif b== scissors:
+    print("you lose")
+elif a==2:
+  if b== rock:
+    print("you lose")
+  elif b== paper:
+    print("you win")
+  elif b== scissors:
+    print("draw")
+
+
+
+
+
+
+
+    </py-script>
+  </body>
+</html>
